@@ -127,3 +127,18 @@ Hallucination = the model confidently makes things up.
 1. Train the model with examples where the correct answer is "I don't know"
 2. Give it tools (like web search) to look things up
 3. **Put the facts into the context window** → this is what RAG does
+
+## Weights and Parameters
+They’re the **numbers** a model learns during training. For practical purposes, the two words mean the same thing.
+
+Remember the model that learned a `tax rate`: `tax = w × amount`. After training, `w = 0.17`.
+
+That `0.17` is a *weight*. It’s a number the model *figured out* by being wrong and corrected, over and over. Nobody typed it in.
+
+Add a fixed fee and you get `cost = w × amount + b`:
+
+`w (weight)`: how strongly the input affects the output
+`b (bias)`: a fixed amount added on top
+`Parameters` = all the learned numbers together, weights and biases
+
+So, strictly: `parameters = weights + biases`. In everyday talk, people use “weights” to mean all of them.
