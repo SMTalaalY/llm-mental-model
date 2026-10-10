@@ -142,3 +142,7 @@ Add a fixed fee and you get `cost = w × amount + b`:
 `Parameters` = all the learned numbers together, weights and biases
 
 So, strictly: `parameters = weights + biases`. In everyday talk, people use “weights” to mean all of them.
+
+**Weights** are learned numbers that multiply the `inputs`; **biases** are learned numbers added on top. Together they’re the **parameters**.
+In `cost = w × amount + b`: amount is the input, `w` is the weight, `b` is the bias, `cost` is the output.
+
